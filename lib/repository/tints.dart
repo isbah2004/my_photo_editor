@@ -1,0 +1,37 @@
+import 'package:flutter/material.dart';
+
+class Tints {
+  List<Color> tintsList = [
+    Colors.black,
+    Colors.blue,
+    Colors.orange,
+    Colors.pink,
+    Colors.purple,
+    Colors.green,
+    Colors.red,
+    Colors.teal,
+    Colors.brown,
+    Colors.yellow,
+    Colors.indigo,
+    Colors.amber,
+    Colors.cyan,
+    Colors.deepOrange,
+    Colors.deepPurple,
+    Colors.lime,
+    Colors.lightBlue,
+    Colors.lightGreen,
+    Colors.pinkAccent,
+    Colors.redAccent,
+    Colors.greenAccent,
+    Colors.blueAccent,
+    Colors.tealAccent,
+    Colors.indigoAccent,
+    Colors.purpleAccent,
+    Colors.amberAccent,
+    Colors.limeAccent,
+    Colors.deepOrangeAccent,
+    Colors.cyanAccent,
+    Colors.lightBlueAccent,
+    Colors.lightGreenAccent,
+  ];
+}
