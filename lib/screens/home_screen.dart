@@ -1,4 +1,8 @@
+import 'dart:typed_data';
+
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:image_gallery_saver/image_gallery_saver.dart';
 import 'package:my_photo_editor/provider/image_provider.dart';
 import 'package:my_photo_editor/reusablecode/reusablewidgets/bottom_home_button.dart';
 import 'package:my_photo_editor/screens/adjust_screen.dart';
@@ -17,6 +21,28 @@ class HomeScreen extends StatelessWidget {
   const HomeScreen({
     super.key,
   });
+  Future<void> saveImage(BuildContext context) async {
+    try {
+      final provider = Provider.of<AppImageProvider>(context, listen: false);
+      if (provider.currentImage != null) {
+        final result = await ImageGallerySaver.saveImage(
+            Uint8List.fromList(provider.currentImage!),
+            quality: 80,
+            name: "photo");
+        debugPrint('Image saved: $result');
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('Image saved to gallery')),
+        );
+      } else {
+        throw PlatformException(code: 'NO_IMAGE', message: 'No image to save.');
+      }
+    } catch (e) {
+      debugPrint('Error saving image: $e');
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Failed to save image')),
+      );
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +60,9 @@ class HomeScreen extends StatelessWidget {
         ),
         actions: [
           TextButton(
-            onPressed: () {},
+            onPressed: () {
+              saveImage(context);
+            },
             child: const Text(
               'Done',
               style: TextStyle(color: Colors.white, fontSize: 15),

@@ -25,6 +25,7 @@ INJECTED from C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\android\app\s
 MERGED from C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\android\app\src\main\AndroidManifest.xml:1:1-47:12
 MERGED from [:image_picker_android] C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-21:12
 MERGED from [:flutter_plugin_android_lifecycle] C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\build\flutter_plugin_android_lifecycle\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:image_gallery_saver] C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\build\image_gallery_saver\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:path_provider_android] C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\d16d53746166143fe30054cbfe559e31\transformed\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.activity:activity:1.7.2] C:\Users\Syed Isbah\.gradle\caches\transforms-3\7e30f4b09ad63b0fe951adc42de2658a\transformed\jetified-activity-1.7.2\AndroidManifest.xml:17:1-22:12
@@ -98,6 +99,8 @@ MERGED from [:image_picker_android] C:\Users\Syed Isbah\OneDrive\Desktop\my_phot
 MERGED from [:image_picker_android] C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:flutter_plugin_android_lifecycle] C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\build\flutter_plugin_android_lifecycle\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:flutter_plugin_android_lifecycle] C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\build\flutter_plugin_android_lifecycle\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:image_gallery_saver] C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\build\image_gallery_saver\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:image_gallery_saver] C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\build\image_gallery_saver\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:path_provider_android] C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:path_provider_android] C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\d16d53746166143fe30054cbfe559e31\transformed\fragment-1.1.0\AndroidManifest.xml:20:5-22:41

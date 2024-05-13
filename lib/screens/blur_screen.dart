@@ -32,21 +32,22 @@ class _BlurScreenState extends State<BlurScreen> {
       appBar: AppBar(
         centerTitle: true,
 
-        actions: [
-          Consumer<AppImageProvider>(builder: (context, value, child) {
-            return IconButton(
-              icon: const Icon(Icons.done),
-              color: Colors.white,
-              onPressed: () async {
-                Uint8List? bytes = await screenshotController.capture();
-                imageProvider.changeImage(bytes!);
-                if (!mounted) return;
-                Navigator.pop(context);
-              },
-            );
-          })
-        ],
-        leading: CloseButton(
+       actions: [
+          Consumer<AppImageProvider>(
+            builder: (context, value, child) {
+              return IconButton(
+                icon: const Icon(Icons.done),
+                color: Colors.white,
+                onPressed: () async {
+                  Uint8List? bytes = await screenshotController.capture();
+                  imageProvider.changeImage(bytes!);
+                  if (!mounted) return;
+                  Navigator.pop(context);
+                },
+              );
+            },
+          ),
+        ], leading: CloseButton(
           color: Colors.white,
           onPressed: () {
             Navigator.pop(context);

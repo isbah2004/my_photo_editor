@@ -1,6 +1,6 @@
 class Constants {
   static const String pickerBackground =
-      'assets/images/tom-barrett-hgGplX3PFBg-unsplash.jpg';
+      'assets/images/adrien-olichon-_GH9LwhlSO4-unsplash.jpg';
   static const String cameraIcon =
       'assets/images/211705_camera_icon.png';
   static const String galleryIcon =

@@ -21,7 +21,9 @@ class AppTheme {
   );
 
   static ThemeData defaultTheme = ThemeData(
-    sliderTheme: const SliderThemeData(activeTrackColor: whiteColor,thumbColor: whiteColor),
+    snackBarTheme: const SnackBarThemeData(backgroundColor: blackColor),
+    sliderTheme: const SliderThemeData(
+        activeTrackColor: whiteColor, thumbColor: whiteColor),
     appBarTheme: const AppBarTheme(backgroundColor: blackColor),
     scaffoldBackgroundColor: blackColor,
     primaryColor: blackColor,

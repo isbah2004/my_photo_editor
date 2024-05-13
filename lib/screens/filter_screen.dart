@@ -37,18 +37,22 @@ class _FilterScreenState extends State<FilterScreen> {
         backgroundColor: Colors.black,
        
         centerTitle: true,
-        actions: [
-          TextButton(
-            onPressed: () async {
-              Uint8List? bytes = await screenshotController.capture();
-              imageProvider.changeImage(bytes!);
-              if (!mounted) return;
-              Navigator.pop(context);
+     actions: [
+          Consumer<AppImageProvider>(
+            builder: (context, value, child) {
+              return IconButton(
+                icon: const Icon(Icons.done),
+                color: Colors.white,
+                onPressed: () async {
+                  Uint8List? bytes = await screenshotController.capture();
+                  imageProvider.changeImage(bytes!);
+                  if (!mounted) return;
+                  Navigator.pop(context);
+                },
+              );
             },
-            child: const Text('Save'),
           ),
-        ],
-      ),
+        ],  ),
       body: Center(
         child: Consumer2<AppImageProvider, FilterProvider>(
           builder: (context, value1, value2, child) {

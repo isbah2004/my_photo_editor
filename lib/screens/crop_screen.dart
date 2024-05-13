@@ -21,8 +21,9 @@ class _CropScreenState extends State<CropScreen> {
   void initState() {
     super.initState();
     cropController = CropController(
-      aspectRatio: 1,
-      defaultCrop: const Rect.fromLTRB(0.05, 0.05, 0.95, 0.95),
+      aspectRatio: null,
+      defaultCrop:  const Rect.fromLTRB(0.1, 0.1, 0.9, 0.9),
+      
     );
   }
 
