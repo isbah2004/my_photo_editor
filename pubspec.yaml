@@ -50,6 +50,7 @@ dependencies:
   widget_mask: ^1.0.0+0
   matrix_gesture_detector: ^0.2.0-nullsafety.1
   font_awesome_flutter: ^10.7.0
+  scrollable_positioned_list: ^0.3.8
 
 dev_dependencies:
   flutter_test:

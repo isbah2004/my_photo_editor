@@ -24,7 +24,7 @@ class PickerScreen extends StatelessWidget {
       //   ),
       // ),
       body: Container(
-        decoration: const BoxDecoration(
+        decoration:  BoxDecoration(
           image: DecorationImage(fit: BoxFit.fill,
             image: AssetImage(Constants.pickerBackground),
           ),
@@ -32,46 +32,12 @@ class PickerScreen extends StatelessWidget {
         child: Center(
           child: Consumer<AppImageProvider>(
             builder: (context, value, index) {
-              return Column(
+              return Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  ElevatedButton(
-                    onPressed: () {
-                      PickImage(source: ImageSource.gallery).pickImage(
-                        onPick: (File? image) {
-                          if (image != null) {
-                            value.changeImageFile(image);
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => const HomeScreen(),
-                              ),
-                            );
-                          }
-                        },
-                      );
-                    },
-                    child: const Text('Gallery'),
-                  ),
-                  ElevatedButton(
-                    onPressed: () {
-                      PickImage(source: ImageSource.camera).pickImage(
-                        onPick: (File? image) {
-                          if (image != null) {
-                            value.changeImageFile(image);
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => const HomeScreen(),
-                              ),
-                            );
-                          }
-                        },
-                      );
-                    },
-                    child: const Text('Camera'),
-                  ),
-                ],
+                  Image(image: AssetImage(Constants.galleryIcon),),
+                  Image(image: AssetImage(Constants.cameraIcon),),
+               ],
               );
             },
           ),
@@ -80,3 +46,30 @@ class PickerScreen extends StatelessWidget {
     );
   }
 }
+    //  PickImage(source: ImageSource.camera).pickImage(
+    //                     onPick: (File? image) {
+    //                       if (image != null) {
+    //                         value.changeImageFile(image);
+    //                         Navigator.push(
+    //                           context,
+    //                           MaterialPageRoute(
+    //                             builder: (context) => const HomeScreen(),
+    //                           ),
+    //                         );
+    //                       }
+    //                     },
+    //                   );
+    //                  PickImage(source: ImageSource.gallery).pickImage(
+    //                     onPick: (File? image) {
+    //                       if (image != null) {
+    //                         value.changeImageFile(image);
+    //                         Navigator.push(
+    //                           context,
+    //                           MaterialPageRoute(
+    //                             builder: (context) => const HomeScreen(),
+    //                           ),
+    //                         );
+    //                       }
+    //                     },
+    //                   );
+                  
