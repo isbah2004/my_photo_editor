@@ -1,16 +1,40 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.my_photo_editor.app-mergeDebugResources-20:/values-pa/values-pa.xml",
+            "outputFile": "com.megadevelopers.pixelcraft.app-mergeDebugResources-23:/values-pa/values-pa.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Syed Isbah\\.gradle\\caches\\transforms-3\\0b9c903fef8d2eb2a269c36999ef4a74\\transformed\\core-1.10.1\\res\\values-pa\\values-pa.xml",
+                    "source": "C:\\Users\\Syed Isbah\\.gradle\\caches\\transforms-3\\f7f812a44927e8b4196815b75390b6d6\\transformed\\jetified-play-services-basement-11.0.4\\res\\values-pa\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "285",
+                        "endColumns": "209",
+                        "endOffsets": "494"
+                    },
+                    "to": {
+                        "startLines": "9",
+                        "startColumns": "4",
+                        "startOffsets": "838",
+                        "endColumns": "209",
+                        "endOffsets": "1043"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Syed Isbah\\.gradle\\caches\\transforms-3\\a3842a17fe7307c5bcdac869078c73a0\\transformed\\core-1.10.1\\res\\values-pa\\values-pa.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
                         "startOffsets": "55,153,255,358,459,561,659,788",
                         "endColumns": "97,101,102,100,101,97,128,100",
                         "endOffsets": "148,250,353,454,556,654,783,884"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,10",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,203,305,408,509,611,709,1048",
+                        "endColumns": "97,101,102,100,101,97,128,100",
+                        "endOffsets": "198,300,403,504,606,704,833,1144"
                     }
                 }
             ]

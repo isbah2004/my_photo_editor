@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_circle_color_picker/flutter_circle_color_picker.dart';
 import 'package:my_photo_editor/provider/draw_provider.dart';
+import 'package:my_photo_editor/theme/theme_data.dart';
 import 'package:provider/provider.dart';
 
 class ColorPicker {
@@ -11,7 +12,12 @@ class ColorPicker {
         return Consumer<DrawProvider>(
           builder: (context, value, index) {
             return AlertDialog(
-              title: const Text('Pick a color'),
+              backgroundColor: AppTheme.blackColor,
+              shadowColor: AppTheme.blackColor,
+              title: Text(
+                'Pick a color',
+                style: AppTheme.bodyLarge,
+              ),
               content: CircleColorPicker(
                 onChanged: (color) {
                   value.setTempColor(color);
@@ -19,15 +25,21 @@ class ColorPicker {
                 size: const Size(240, 240),
                 strokeWidth: 4,
                 thumbSize: 36,
+                textStyle: AppTheme.bodyLarge,
               ),
               actions: [
-                ElevatedButton(
+                TextButton(
                   onPressed: () {
                     onPick(value.tempColor);
 
                     Navigator.pop(context);
                   },
-                  child: const Text('Got it'),
+                  child: const Text(
+                    'Got it',
+                    style: TextStyle(
+                      color: AppTheme.whiteColor,
+                    ),
+                  ),
                 ),
               ],
             );

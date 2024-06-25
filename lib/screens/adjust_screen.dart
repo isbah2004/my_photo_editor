@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:my_photo_editor/constants/constants.dart';
 import 'package:my_photo_editor/provider/adjust_provider.dart';
 import 'package:my_photo_editor/provider/image_provider.dart';
+import 'package:my_photo_editor/reusablecode/reusablefunctions/facebook_ads.dart';
 import 'package:my_photo_editor/reusablecode/reusablewidgets/bottom_button.dart';
 import 'package:my_photo_editor/reusablecode/reusablewidgets/reusable_slider.dart';
 import 'package:provider/provider.dart';
@@ -27,7 +28,7 @@ class _AdjustScreenState extends State<AdjustScreen>
   @override
   void initState() {
     super.initState();
-
+    FacebookAds.showInterstitialAd();
     imageProvider = Provider.of<AppImageProvider>(context, listen: false);
     adjustProvider = Provider.of<AdjustProvider>(context, listen: false);
     adjustProvider.adjust();

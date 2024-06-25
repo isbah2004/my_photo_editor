@@ -1,9 +1,9 @@
-import 'dart:typed_data';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:image_gallery_saver/image_gallery_saver.dart';
+import 'package:my_photo_editor/provider/ads_provider.dart';
 import 'package:my_photo_editor/provider/image_provider.dart';
+import 'package:my_photo_editor/reusablecode/reusablefunctions/facebook_ads.dart';
 import 'package:my_photo_editor/reusablecode/reusablewidgets/bottom_home_button.dart';
 import 'package:my_photo_editor/screens/adjust_screen.dart';
 import 'package:my_photo_editor/screens/crop_screen.dart';
@@ -77,136 +77,145 @@ class HomeScreen extends StatelessWidget {
           },
         ),
       ),
-      bottomNavigationBar: SizedBox(
-        height: 70,
-        width: double.infinity,
-        child: SingleChildScrollView(
-          scrollDirection: Axis.horizontal,
-          child: Row(
-            children: [
-              BottomHomeButton(
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const AdjustScreen(),
-                    ),
-                  );
-                },
-                icon: Icons.tune,
-                title: 'Adjust',
-              ),
-              BottomHomeButton(
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const BlurScreen(),
-                    ),
-                  );
-                },
-                icon: Icons.blur_circular,
-                title: 'Blur',
-              ),
-              BottomHomeButton(
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const CropScreen(),
-                    ),
-                  );
-                },
-                icon: Icons.crop,
-                title: 'Crop',
-              ),
-              BottomHomeButton(
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const DrawScreen(),
-                    ),
-                  );
-                },
-                icon: Icons.draw_outlined,
-                title: 'Draw',
-              ),
-              BottomHomeButton(
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const FilterScreen(),
-                    ),
-                  );
-                },
-                icon: Icons.filter,
-                title: 'Filter',
-              ),
-              BottomHomeButton(
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const FitScreen(),
-                    ),
-                  );
-                },
-                icon: Icons.fit_screen,
-                title: 'Fit',
-              ),
-              BottomHomeButton(
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const MaskScreen(),
-                    ),
-                  );
-                },
-                icon: Icons.star_border,
-                title: 'Mask',
-              ),
-              BottomHomeButton(
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const StickerScreen(),
-                    ),
-                  );
-                },
-                icon: Icons.emoji_emotions_outlined,
-                title: 'Stickers',
-              ),
-              BottomHomeButton(
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const TextScreen(),
-                    ),
-                  );
-                },
-                icon: Icons.text_fields_rounded,
-                title: 'Text',
-              ),
-              BottomHomeButton(
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const TintScreen(),
-                    ),
-                  );
-                },
-                icon: Icons.border_color_outlined,
-                title: 'Tint',
-              ),
-            ],
-          ),
-        ),
+      bottomNavigationBar: Consumer<HomeAdProvider>(
+        builder: (context, value, child) {
+          return SizedBox(
+            height: value.homeAdLoaded ? 100 : 70,
+            width: double.infinity,
+            child: Column(
+              children: [
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    children: [
+                      BottomHomeButton(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const AdjustScreen(),
+                            ),
+                          );
+                        },
+                        icon: Icons.tune,
+                        title: 'Adjust',
+                      ),
+                      BottomHomeButton(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const BlurScreen(),
+                            ),
+                          );
+                        },
+                        icon: Icons.blur_circular,
+                        title: 'Blur',
+                      ),
+                      BottomHomeButton(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const CropScreen(),
+                            ),
+                          );
+                        },
+                        icon: Icons.crop,
+                        title: 'Crop',
+                      ),
+                      BottomHomeButton(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const DrawScreen(),
+                            ),
+                          );
+                        },
+                        icon: Icons.draw_outlined,
+                        title: 'Draw',
+                      ),
+                      BottomHomeButton(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const FilterScreen(),
+                            ),
+                          );
+                        },
+                        icon: Icons.filter,
+                        title: 'Filter',
+                      ),
+                      BottomHomeButton(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const FitScreen(),
+                            ),
+                          );
+                        },
+                        icon: Icons.fit_screen,
+                        title: 'Fit',
+                      ),
+                      BottomHomeButton(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const MaskScreen(),
+                            ),
+                          );
+                        },
+                        icon: Icons.star_border,
+                        title: 'Mask',
+                      ),
+                      BottomHomeButton(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const StickerScreen(),
+                            ),
+                          );
+                        },
+                        icon: Icons.emoji_emotions_outlined,
+                        title: 'Stickers',
+                      ),
+                      BottomHomeButton(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const TextScreen(),
+                            ),
+                          );
+                        },
+                        icon: Icons.text_fields_rounded,
+                        title: 'Text',
+                      ),
+                      BottomHomeButton(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const TintScreen(),
+                            ),
+                          );
+                        },
+                        icon: Icons.border_color_outlined,
+                        title: 'Tint',
+                      ),
+                    ],
+                  ),
+                ),
+                FacebookAds.homeNativeAd(),
+              ],
+            ),
+          );
+        },
       ),
     );
   }

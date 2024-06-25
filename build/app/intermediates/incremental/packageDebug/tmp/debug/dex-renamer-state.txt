@@ -1,4 +1,16 @@
-#Mon May 13 12:44:58 PKT 2024
-base.0=C\:\\Users\\Syed Isbah\\OneDrive\\Desktop\\my_photo_editor\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
-renamed.0=classes.dex
+#Tue Jun 25 11:32:35 PKT 2024
+path.4=1/classes.dex
+path.3=12/classes.dex
+path.2=0/classes.dex
+path.1=0/classes.dex
 path.0=classes.dex
+base.4=C\:\\Users\\Syed Isbah\\OneDrive\\Desktop\\my_photo_editor\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
+base.3=C\:\\Users\\Syed Isbah\\OneDrive\\Desktop\\my_photo_editor\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\12\\classes.dex
+base.2=C\:\\Users\\Syed Isbah\\OneDrive\\Desktop\\my_photo_editor\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.1=C\:\\Users\\Syed Isbah\\OneDrive\\Desktop\\my_photo_editor\\build\\app\\intermediates\\dex\\debug\\mergeLibDexDebug\\0\\classes.dex
+base.0=C\:\\Users\\Syed Isbah\\OneDrive\\Desktop\\my_photo_editor\\build\\app\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+renamed.3=classes4.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+renamed.4=classes5.dex

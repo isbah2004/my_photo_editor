@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.my_photo_editor.app-mergeDebugResources-20:/values-night-v8/values-night-v8.xml",
+            "outputFile": "com.megadevelopers.pixelcraft.app-mergeDebugResources-23:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Syed Isbah\\OneDrive\\Desktop\\my_photo_editor\\android\\app\\src\\main\\res\\values-night\\styles.xml",

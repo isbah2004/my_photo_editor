@@ -4,7 +4,7 @@
     "type": "MERGED_MANIFESTS",
     "kind": "Directory"
   },
-  "applicationId": "com.example.my_photo_editor",
+  "applicationId": "com.megadevelopers.pixelcraft",
   "variantName": "debug",
   "elements": [
     {

@@ -1,12 +1,12 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.example.my_photo_editor"
+3    package="com.megadevelopers.pixelcraft"
 4    android:versionCode="1"
 5    android:versionName="1.0.0" >
 6
 7    <uses-sdk
-8        android:minSdkVersion="19"
-9        android:targetSdkVersion="33" />
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="34" />
 10    <!--
 11         The INTERNET permission is required for development. Specifically,
 12         the Flutter tool needs it to communicate with the running application
@@ -16,7 +16,7 @@
 15-->C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\android\app\src\debug\AndroidManifest.xml:6:5-66
 15-->C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\android\app\src\debug\AndroidManifest.xml:6:22-64
 16    <uses-permission android:name="android.permission.CAMERA" />
-16-->C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\android\app\src\main\AndroidManifest.xml:2:1-61
+16-->C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\android\app\src\main\AndroidManifest.xml:2:1-60
 16-->C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\android\app\src\main\AndroidManifest.xml:2:18-58
 17    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 17-->C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\android\app\src\main\AndroidManifest.xml:3:1-76
@@ -26,160 +26,222 @@
 18-->C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\android\app\src\main\AndroidManifest.xml:4:18-73
 19    <!--
 20 Required to query activities that can process text, see:
-21         https://developer.android.com/training/package-visibility?hl=en and
+21         https://developer.android.com/training/package="com.megadevelopers.pixelcraft">
 22         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
 23
 24         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
 25    -->
 26    <queries>
-26-->C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\android\app\src\main\AndroidManifest.xml:41:5-46:15
+26-->C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\android\app\src\main\AndroidManifest.xml:26:5-31:15
 27        <intent>
-27-->C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\android\app\src\main\AndroidManifest.xml:42:9-45:18
+27-->C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\android\app\src\main\AndroidManifest.xml:27:9-30:18
 28            <action android:name="android.intent.action.PROCESS_TEXT" />
-28-->C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\android\app\src\main\AndroidManifest.xml:43:13-72
-28-->C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\android\app\src\main\AndroidManifest.xml:43:21-70
+28-->C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\android\app\src\main\AndroidManifest.xml:28:13-72
+28-->C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\android\app\src\main\AndroidManifest.xml:28:21-70
 29
 30            <data android:mimeType="text/plain" />
-30-->C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\android\app\src\main\AndroidManifest.xml:44:13-50
-30-->C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\android\app\src\main\AndroidManifest.xml:44:19-48
+30-->C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\android\app\src\main\AndroidManifest.xml:29:13-50
+30-->C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\android\app\src\main\AndroidManifest.xml:29:19-48
 31        </intent>
-32    </queries>
-33
-34    <permission
-34-->[androidx.core:core:1.10.1] C:\Users\Syed Isbah\.gradle\caches\transforms-3\0b9c903fef8d2eb2a269c36999ef4a74\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
-35        android:name="com.example.my_photo_editor.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-35-->[androidx.core:core:1.10.1] C:\Users\Syed Isbah\.gradle\caches\transforms-3\0b9c903fef8d2eb2a269c36999ef4a74\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
-36        android:protectionLevel="signature" />
-36-->[androidx.core:core:1.10.1] C:\Users\Syed Isbah\.gradle\caches\transforms-3\0b9c903fef8d2eb2a269c36999ef4a74\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
-37
-38    <uses-permission android:name="com.example.my_photo_editor.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-38-->[androidx.core:core:1.10.1] C:\Users\Syed Isbah\.gradle\caches\transforms-3\0b9c903fef8d2eb2a269c36999ef4a74\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
-38-->[androidx.core:core:1.10.1] C:\Users\Syed Isbah\.gradle\caches\transforms-3\0b9c903fef8d2eb2a269c36999ef4a74\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
-39
-40    <application
-41        android:name="android.app.Application"
-42        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-42-->[androidx.core:core:1.10.1] C:\Users\Syed Isbah\.gradle\caches\transforms-3\0b9c903fef8d2eb2a269c36999ef4a74\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
-43        android:debuggable="true"
-44        android:icon="@mipmap/ic_launcher"
-45        android:label="my_photo_editor" >
-46        <activity
-47            android:name="com.example.my_photo_editor.MainActivity"
-48            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-49            android:exported="true"
-50            android:hardwareAccelerated="true"
-51            android:launchMode="singleTop"
-52            android:theme="@style/LaunchTheme"
-53            android:windowSoftInputMode="adjustResize" >
-54
-55            <!--
-56                 Specifies an Android theme to apply to this Activity as soon as
-57                 the Android process has started. This theme is visible to the user
-58                 while the Flutter UI initializes. After that, this theme continues
-59                 to determine the Window background behind the Flutter UI.
-60            -->
-61            <meta-data
-62                android:name="io.flutter.embedding.android.NormalTheme"
-63                android:resource="@style/NormalTheme" />
-64
-65            <intent-filter>
-66                <action android:name="android.intent.action.MAIN" />
-67
-68                <category android:name="android.intent.category.LAUNCHER" />
-69            </intent-filter>
-70        </activity>
-71        <!--
-72             Don't delete the meta-data below.
-73             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-74        -->
-75        <meta-data
-76            android:name="flutterEmbedding"
-77            android:value="2" />
-78
-79        <provider
-79-->[:image_picker_android] C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-18:20
-80            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
-80-->[:image_picker_android] C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-82
-81            android:authorities="com.example.my_photo_editor.flutter.image_provider"
-81-->[:image_picker_android] C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-74
-82            android:exported="false"
-82-->[:image_picker_android] C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-37
-83            android:grantUriPermissions="true" >
-83-->[:image_picker_android] C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-47
-84            <meta-data
-84-->[:image_picker_android] C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-17:75
-85                android:name="android.support.FILE_PROVIDER_PATHS"
-85-->[:image_picker_android] C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:16:17-67
-86                android:resource="@xml/flutter_image_picker_file_paths" />
-86-->[:image_picker_android] C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:17:17-72
-87        </provider>
-88
-89        <uses-library
-89-->[androidx.window:window:1.0.0-beta04] C:\Users\Syed Isbah\.gradle\caches\transforms-3\032f4dff274e516110d9363a9793a3e3\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
-90            android:name="androidx.window.extensions"
-90-->[androidx.window:window:1.0.0-beta04] C:\Users\Syed Isbah\.gradle\caches\transforms-3\032f4dff274e516110d9363a9793a3e3\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
-91            android:required="false" />
-91-->[androidx.window:window:1.0.0-beta04] C:\Users\Syed Isbah\.gradle\caches\transforms-3\032f4dff274e516110d9363a9793a3e3\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
-92        <uses-library
-92-->[androidx.window:window:1.0.0-beta04] C:\Users\Syed Isbah\.gradle\caches\transforms-3\032f4dff274e516110d9363a9793a3e3\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
-93            android:name="androidx.window.sidecar"
-93-->[androidx.window:window:1.0.0-beta04] C:\Users\Syed Isbah\.gradle\caches\transforms-3\032f4dff274e516110d9363a9793a3e3\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
-94            android:required="false" />
-94-->[androidx.window:window:1.0.0-beta04] C:\Users\Syed Isbah\.gradle\caches\transforms-3\032f4dff274e516110d9363a9793a3e3\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
-95
-96        <provider
-96-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\a0ecce03964d1d4dc26ffab32b08b16e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:24:9-32:20
-97            android:name="androidx.startup.InitializationProvider"
-97-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\a0ecce03964d1d4dc26ffab32b08b16e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:25:13-67
-98            android:authorities="com.example.my_photo_editor.androidx-startup"
-98-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\a0ecce03964d1d4dc26ffab32b08b16e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:26:13-68
-99            android:exported="false" >
-99-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\a0ecce03964d1d4dc26ffab32b08b16e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:27:13-37
-100            <meta-data
-100-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\a0ecce03964d1d4dc26ffab32b08b16e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
-101                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-101-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\a0ecce03964d1d4dc26ffab32b08b16e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
-102                android:value="androidx.startup" />
-102-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\a0ecce03964d1d4dc26ffab32b08b16e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
-103        </provider>
-104
-105        <receiver
-105-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\a0ecce03964d1d4dc26ffab32b08b16e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
-106            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-106-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\a0ecce03964d1d4dc26ffab32b08b16e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
-107            android:directBootAware="false"
-107-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\a0ecce03964d1d4dc26ffab32b08b16e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
-108            android:enabled="true"
-108-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\a0ecce03964d1d4dc26ffab32b08b16e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
-109            android:exported="true"
-109-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\a0ecce03964d1d4dc26ffab32b08b16e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
-110            android:permission="android.permission.DUMP" >
-110-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\a0ecce03964d1d4dc26ffab32b08b16e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
-111            <intent-filter>
-111-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\a0ecce03964d1d4dc26ffab32b08b16e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
-112                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-112-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\a0ecce03964d1d4dc26ffab32b08b16e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
-112-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\a0ecce03964d1d4dc26ffab32b08b16e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
-113            </intent-filter>
-114            <intent-filter>
-114-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\a0ecce03964d1d4dc26ffab32b08b16e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
-115                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-115-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\a0ecce03964d1d4dc26ffab32b08b16e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
-115-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\a0ecce03964d1d4dc26ffab32b08b16e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
-116            </intent-filter>
-117            <intent-filter>
-117-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\a0ecce03964d1d4dc26ffab32b08b16e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
-118                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-118-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\a0ecce03964d1d4dc26ffab32b08b16e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
-118-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\a0ecce03964d1d4dc26ffab32b08b16e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
-119            </intent-filter>
-120            <intent-filter>
-120-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\a0ecce03964d1d4dc26ffab32b08b16e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
-121                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-121-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\a0ecce03964d1d4dc26ffab32b08b16e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
-121-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\a0ecce03964d1d4dc26ffab32b08b16e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
-122            </intent-filter>
-123        </receiver>
-124    </application>
-125
-126</manifest>
+32
+33        <package android:name="com.facebook.katana" />
+33-->[com.facebook.android:audience-network-sdk:6.17.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\1bf34b1eb2f969c85bc32a8d8d981bf0\transformed\jetified-audience-network-sdk-6.17.0\AndroidManifest.xml:12:9-55
+33-->[com.facebook.android:audience-network-sdk:6.17.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\1bf34b1eb2f969c85bc32a8d8d981bf0\transformed\jetified-audience-network-sdk-6.17.0\AndroidManifest.xml:12:18-52
+34    </queries>
+35
+36    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+36-->[com.facebook.android:audience-network-sdk:6.17.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\1bf34b1eb2f969c85bc32a8d8d981bf0\transformed\jetified-audience-network-sdk-6.17.0\AndroidManifest.xml:16:5-79
+36-->[com.facebook.android:audience-network-sdk:6.17.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\1bf34b1eb2f969c85bc32a8d8d981bf0\transformed\jetified-audience-network-sdk-6.17.0\AndroidManifest.xml:16:22-76
+37    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+37-->[com.facebook.android:audience-network-sdk:6.17.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\1bf34b1eb2f969c85bc32a8d8d981bf0\transformed\jetified-audience-network-sdk-6.17.0\AndroidManifest.xml:17:5-79
+37-->[com.facebook.android:audience-network-sdk:6.17.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\1bf34b1eb2f969c85bc32a8d8d981bf0\transformed\jetified-audience-network-sdk-6.17.0\AndroidManifest.xml:17:22-76
+38
+39    <permission
+39-->[androidx.core:core:1.10.1] C:\Users\Syed Isbah\.gradle\caches\transforms-3\a3842a17fe7307c5bcdac869078c73a0\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
+40        android:name="com.megadevelopers.pixelcraft.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+40-->[androidx.core:core:1.10.1] C:\Users\Syed Isbah\.gradle\caches\transforms-3\a3842a17fe7307c5bcdac869078c73a0\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
+41        android:protectionLevel="signature" />
+41-->[androidx.core:core:1.10.1] C:\Users\Syed Isbah\.gradle\caches\transforms-3\a3842a17fe7307c5bcdac869078c73a0\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
+42
+43    <uses-permission android:name="com.megadevelopers.pixelcraft.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+43-->[androidx.core:core:1.10.1] C:\Users\Syed Isbah\.gradle\caches\transforms-3\a3842a17fe7307c5bcdac869078c73a0\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
+43-->[androidx.core:core:1.10.1] C:\Users\Syed Isbah\.gradle\caches\transforms-3\a3842a17fe7307c5bcdac869078c73a0\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
+44
+45    <application
+46        android:name="android.app.Application"
+47        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+47-->[androidx.core:core:1.10.1] C:\Users\Syed Isbah\.gradle\caches\transforms-3\a3842a17fe7307c5bcdac869078c73a0\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
+48        android:debuggable="true"
+49        android:hardwareAccelerated="true"
+49-->[:facebook_audience_network] C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\build\facebook_audience_network\intermediates\merged_manifest\debug\AndroidManifest.xml:9:18-52
+50        android:icon="@mipmap/ic_launcher"
+51        android:label="Pixel Craft" >
+52        <activity
+53            android:name="com.megadevelopers.pixelcraft.MainActivity"
+54            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+55            android:exported="true"
+56            android:hardwareAccelerated="true"
+57            android:launchMode="singleTop"
+58            android:theme="@style/LaunchTheme"
+59            android:windowSoftInputMode="adjustResize" >
+60
+61            <!--
+62                 Specifies an Android theme to apply to this Activity as soon as
+63                 the Android process has started. This theme is visible to the user
+64                 while the Flutter UI initializes. After that, this theme continues
+65                 to determine the Window background behind the Flutter UI.
+66            -->
+67            <meta-data
+68                android:name="io.flutter.embedding.android.NormalTheme"
+69                android:resource="@style/NormalTheme" />
+70
+71            <intent-filter>
+72                <action android:name="android.intent.action.MAIN" />
+73
+74                <category android:name="android.intent.category.LAUNCHER" />
+75            </intent-filter>
+76        </activity>
+77        <!--
+78             Don't delete the meta-data below.
+79             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+80        -->
+81        <meta-data
+82            android:name="flutterEmbedding"
+83            android:value="2" />
+84
+85        <provider
+85-->[:image_picker_android] C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:9-19:20
+86            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+86-->[:image_picker_android] C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-82
+87            android:authorities="com.megadevelopers.pixelcraft.flutter.image_provider"
+87-->[:image_picker_android] C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-74
+88            android:exported="false"
+88-->[:image_picker_android] C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-37
+89            android:grantUriPermissions="true" >
+89-->[:image_picker_android] C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-47
+90            <meta-data
+90-->[:image_picker_android] C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-18:75
+91                android:name="android.support.FILE_PROVIDER_PATHS"
+91-->[:image_picker_android] C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:17:17-67
+92                android:resource="@xml/flutter_image_picker_file_paths" />
+92-->[:image_picker_android] C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:18:17-72
+93        </provider> <!-- Trigger Google Play services to install the backported photo picker module. -->
+94        <service
+94-->[:image_picker_android] C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:21:9-33:19
+95            android:name="com.google.android.gms.metadata.ModuleDependencies"
+95-->[:image_picker_android] C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-78
+96            android:enabled="false"
+96-->[:image_picker_android] C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-36
+97            android:exported="false" >
+97-->[:image_picker_android] C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:24:13-37
+98            <intent-filter>
+98-->[:image_picker_android] C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:26:13-28:29
+99                <action android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES" />
+99-->[:image_picker_android] C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:27:17-94
+99-->[:image_picker_android] C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:27:25-91
+100            </intent-filter>
+101
+102            <meta-data
+102-->[:image_picker_android] C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-32:36
+103                android:name="photopicker_activity:0:required"
+103-->[:image_picker_android] C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:31:17-63
+104                android:value="" />
+104-->[:image_picker_android] C:\Users\Syed Isbah\OneDrive\Desktop\my_photo_editor\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:32:17-33
+105        </service>
+106
+107        <activity
+107-->[com.facebook.android:audience-network-sdk:6.17.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\1bf34b1eb2f969c85bc32a8d8d981bf0\transformed\jetified-audience-network-sdk-6.17.0\AndroidManifest.xml:20:9-24:75
+108            android:name="com.facebook.ads.AudienceNetworkActivity"
+108-->[com.facebook.android:audience-network-sdk:6.17.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\1bf34b1eb2f969c85bc32a8d8d981bf0\transformed\jetified-audience-network-sdk-6.17.0\AndroidManifest.xml:21:13-68
+109            android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout"
+109-->[com.facebook.android:audience-network-sdk:6.17.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\1bf34b1eb2f969c85bc32a8d8d981bf0\transformed\jetified-audience-network-sdk-6.17.0\AndroidManifest.xml:22:13-106
+110            android:exported="false"
+110-->[com.facebook.android:audience-network-sdk:6.17.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\1bf34b1eb2f969c85bc32a8d8d981bf0\transformed\jetified-audience-network-sdk-6.17.0\AndroidManifest.xml:23:13-37
+111            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+111-->[com.facebook.android:audience-network-sdk:6.17.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\1bf34b1eb2f969c85bc32a8d8d981bf0\transformed\jetified-audience-network-sdk-6.17.0\AndroidManifest.xml:24:13-72
+112
+113        <provider
+113-->[com.facebook.android:audience-network-sdk:6.17.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\1bf34b1eb2f969c85bc32a8d8d981bf0\transformed\jetified-audience-network-sdk-6.17.0\AndroidManifest.xml:26:9-29:40
+114            android:name="com.facebook.ads.AudienceNetworkContentProvider"
+114-->[com.facebook.android:audience-network-sdk:6.17.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\1bf34b1eb2f969c85bc32a8d8d981bf0\transformed\jetified-audience-network-sdk-6.17.0\AndroidManifest.xml:27:13-75
+115            android:authorities="com.megadevelopers.pixelcraft.AudienceNetworkContentProvider"
+115-->[com.facebook.android:audience-network-sdk:6.17.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\1bf34b1eb2f969c85bc32a8d8d981bf0\transformed\jetified-audience-network-sdk-6.17.0\AndroidManifest.xml:28:13-82
+116            android:exported="false" />
+116-->[com.facebook.android:audience-network-sdk:6.17.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\1bf34b1eb2f969c85bc32a8d8d981bf0\transformed\jetified-audience-network-sdk-6.17.0\AndroidManifest.xml:29:13-37
+117
+118        <meta-data
+118-->[com.google.android.gms:play-services-basement:11.0.4] C:\Users\Syed Isbah\.gradle\caches\transforms-3\f7f812a44927e8b4196815b75390b6d6\transformed\jetified-play-services-basement-11.0.4\AndroidManifest.xml:20:9-121
+119            android:name="com.google.android.gms.version"
+119-->[com.google.android.gms:play-services-basement:11.0.4] C:\Users\Syed Isbah\.gradle\caches\transforms-3\f7f812a44927e8b4196815b75390b6d6\transformed\jetified-play-services-basement-11.0.4\AndroidManifest.xml:20:20-65
+120            android:value="@integer/google_play_services_version" />
+120-->[com.google.android.gms:play-services-basement:11.0.4] C:\Users\Syed Isbah\.gradle\caches\transforms-3\f7f812a44927e8b4196815b75390b6d6\transformed\jetified-play-services-basement-11.0.4\AndroidManifest.xml:20:66-119
+121
+122        <uses-library
+122-->[androidx.window:window:1.0.0-beta04] C:\Users\Syed Isbah\.gradle\caches\transforms-3\f302e75fb7efd781bcf1a29281c188da\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+123            android:name="androidx.window.extensions"
+123-->[androidx.window:window:1.0.0-beta04] C:\Users\Syed Isbah\.gradle\caches\transforms-3\f302e75fb7efd781bcf1a29281c188da\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+124            android:required="false" />
+124-->[androidx.window:window:1.0.0-beta04] C:\Users\Syed Isbah\.gradle\caches\transforms-3\f302e75fb7efd781bcf1a29281c188da\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+125        <uses-library
+125-->[androidx.window:window:1.0.0-beta04] C:\Users\Syed Isbah\.gradle\caches\transforms-3\f302e75fb7efd781bcf1a29281c188da\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+126            android:name="androidx.window.sidecar"
+126-->[androidx.window:window:1.0.0-beta04] C:\Users\Syed Isbah\.gradle\caches\transforms-3\f302e75fb7efd781bcf1a29281c188da\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+127            android:required="false" />
+127-->[androidx.window:window:1.0.0-beta04] C:\Users\Syed Isbah\.gradle\caches\transforms-3\f302e75fb7efd781bcf1a29281c188da\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+128
+129        <provider
+129-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\77b04ab641bc809f6845dd10c6b5dd1f\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:24:9-32:20
+130            android:name="androidx.startup.InitializationProvider"
+130-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\77b04ab641bc809f6845dd10c6b5dd1f\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:25:13-67
+131            android:authorities="com.megadevelopers.pixelcraft.androidx-startup"
+131-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\77b04ab641bc809f6845dd10c6b5dd1f\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:26:13-68
+132            android:exported="false" >
+132-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\77b04ab641bc809f6845dd10c6b5dd1f\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:27:13-37
+133            <meta-data
+133-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\77b04ab641bc809f6845dd10c6b5dd1f\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+134                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+134-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\77b04ab641bc809f6845dd10c6b5dd1f\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+135                android:value="androidx.startup" />
+135-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\77b04ab641bc809f6845dd10c6b5dd1f\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+136        </provider>
+137
+138        <receiver
+138-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\77b04ab641bc809f6845dd10c6b5dd1f\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+139            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+139-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\77b04ab641bc809f6845dd10c6b5dd1f\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+140            android:directBootAware="false"
+140-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\77b04ab641bc809f6845dd10c6b5dd1f\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+141            android:enabled="true"
+141-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\77b04ab641bc809f6845dd10c6b5dd1f\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+142            android:exported="true"
+142-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\77b04ab641bc809f6845dd10c6b5dd1f\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+143            android:permission="android.permission.DUMP" >
+143-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\77b04ab641bc809f6845dd10c6b5dd1f\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+144            <intent-filter>
+144-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\77b04ab641bc809f6845dd10c6b5dd1f\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+145                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+145-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\77b04ab641bc809f6845dd10c6b5dd1f\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+145-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\77b04ab641bc809f6845dd10c6b5dd1f\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+146            </intent-filter>
+147            <intent-filter>
+147-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\77b04ab641bc809f6845dd10c6b5dd1f\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+148                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+148-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\77b04ab641bc809f6845dd10c6b5dd1f\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+148-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\77b04ab641bc809f6845dd10c6b5dd1f\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+149            </intent-filter>
+150            <intent-filter>
+150-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\77b04ab641bc809f6845dd10c6b5dd1f\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+151                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+151-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\77b04ab641bc809f6845dd10c6b5dd1f\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+151-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\77b04ab641bc809f6845dd10c6b5dd1f\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+152            </intent-filter>
+153            <intent-filter>
+153-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\77b04ab641bc809f6845dd10c6b5dd1f\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+154                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+154-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\77b04ab641bc809f6845dd10c6b5dd1f\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+154-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\77b04ab641bc809f6845dd10c6b5dd1f\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+155            </intent-filter>
+156        </receiver>
+157    </application>
+158
+159</manifest>

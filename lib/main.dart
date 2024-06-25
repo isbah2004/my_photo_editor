@@ -1,3 +1,4 @@
+import 'package:facebook_audience_network/facebook_audience_network.dart';
 import 'package:flutter/material.dart';
 import 'package:my_photo_editor/provider/adjust_provider.dart';
 import 'package:my_photo_editor/provider/blur_provider.dart';
@@ -10,11 +11,15 @@ import 'package:my_photo_editor/provider/sticker_provider.dart';
 import 'package:my_photo_editor/provider/text_provider.dart';
 import 'package:my_photo_editor/provider/tint_provider.dart';
 import 'package:my_photo_editor/screens/picker_screen.dart';
-import 'package:my_photo_editor/provider/image_provider.dart';
+import 'package:my_photo_editor/provider/image_provider.dart';        
 import 'package:my_photo_editor/theme/theme_data.dart';
 import 'package:provider/provider.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  FacebookAudienceNetwork.init(
+    testingId: 'd56bea42-38b3-4243-86cd-fd3305def9d2',
+  );
   runApp(
     MultiProvider(
       providers: [

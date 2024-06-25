@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:my_photo_editor/constants/constants.dart';
 import 'package:my_photo_editor/provider/image_provider.dart';
+import 'package:my_photo_editor/reusablecode/reusablefunctions/facebook_ads.dart';
 import 'package:my_photo_editor/reusablecode/reusablefunctions/pick_image.dart';
 import 'package:my_photo_editor/screens/home_screen.dart';
 import 'package:my_photo_editor/theme/theme_data.dart';
@@ -95,6 +96,7 @@ class PickerScreen extends StatelessWidget {
           ),
         ),
       ),
+      bottomNavigationBar: FacebookAds.pickerNativeAd(),
     );
   }
 }

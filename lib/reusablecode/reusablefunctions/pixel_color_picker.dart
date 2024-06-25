@@ -2,6 +2,7 @@ import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
 import 'package:my_photo_editor/provider/draw_provider.dart';
+import 'package:my_photo_editor/theme/theme_data.dart';
 import 'package:pixel_color_picker/pixel_color_picker.dart';
 import 'package:provider/provider.dart';
 
@@ -12,8 +13,8 @@ class PixelColorImage {
       context: context,
       builder: (BuildContext context) {
         return Consumer<DrawProvider>(builder: (context, value, child) {
-          return AlertDialog(
-            title: const Text('Move your finger'),
+          return AlertDialog(backgroundColor: AppTheme.blackColor,shadowColor: AppTheme.blackColor,
+            title:  Text('Move your finger',style: AppTheme.bodyLarge,),
             content: Column(
               mainAxisSize: MainAxisSize.max,
               children: [
@@ -44,14 +45,14 @@ class PixelColorImage {
                 onPressed: () {
                   Navigator.pop(context);
                 },
-                child: const Text('Cancel'),
+                child: const Text('Cancel',style: TextStyle(color: AppTheme.whiteColor),),
               ),
               TextButton(
                 onPressed: () {
                   onPick(value.tempColor);
                   Navigator.pop(context);
                 },
-                child: const Text('Pick'),
+                child: const Text('Pick',style: TextStyle(color: AppTheme.whiteColor),),
               ),
             ],
          
